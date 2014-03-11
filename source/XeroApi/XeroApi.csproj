@@ -67,6 +67,7 @@
     <Compile Include="Model\Attachment.cs" />
     <Compile Include="Model\Balances.cs" />
     <Compile Include="Model\BankTransaction.cs" />
+    <Compile Include="Model\BankTransfer.cs" />
     <Compile Include="Model\BatchPayments.cs" />
     <Compile Include="Model\BrandingTheme.cs" />
     <Compile Include="Model\ContactGroup.cs" />
