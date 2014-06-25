@@ -22,9 +22,6 @@ namespace XeroApi.Model
         public decimal Amount { get; set; }
 
         [ReadOnly]
-        public Guid? BankTransferID { get; set; }
-
-        [ReadOnly]
         public decimal? CurrencyRate { get; set; }
 
         [ReadOnly]
