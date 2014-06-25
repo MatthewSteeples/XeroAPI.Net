@@ -71,6 +71,8 @@
     <Compile Include="Model\BatchPayments.cs" />
     <Compile Include="Model\BrandingTheme.cs" />
     <Compile Include="Model\ContactGroup.cs" />
+    <Compile Include="Model\ConversionBalance.cs" />
+    <Compile Include="Model\ConversionDate.cs" />
     <Compile Include="Model\CreditNote.cs" />
     <Compile Include="Model\Currency.cs" />
     <Compile Include="Model\Employee.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Model\Reporting\PublishedReportBase.cs" />
     <Compile Include="Model\Reporting\ReportQueryDescription.cs" />
     <Compile Include="Model\Reporting\TrialBalanceReport.cs" />
+    <Compile Include="Model\Setup.cs" />
     <Compile Include="Model\TaxComponent.cs" />
     <Compile Include="Model\TaxRate.cs" />
     <Compile Include="Model\TrackingCategory.cs" />

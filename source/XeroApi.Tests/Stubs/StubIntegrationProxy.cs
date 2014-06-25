@@ -39,6 +39,7 @@ namespace XeroApi.Tests.Stubs
         public string UpdateOrCreateElements(string endpointName, string body)
         {
             LastEndpointName = endpointName;
+            LastBodySent = body;
             return GenerateSampleResponseXml(endpointName);
         }
 
@@ -70,8 +71,14 @@ namespace XeroApi.Tests.Stubs
 
         public string LastEndpointName
         {
-            get; 
+            get;
             private set; 
+        }
+
+        public string LastBodySent
+        {
+            get;
+            private set;
         }
 
         private static string GenerateSampleResponseXml(string elementName)

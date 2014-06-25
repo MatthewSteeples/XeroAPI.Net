@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using XeroApi.Linq;
 using XeroApi.Model;
 
 namespace XeroApi.Integration
