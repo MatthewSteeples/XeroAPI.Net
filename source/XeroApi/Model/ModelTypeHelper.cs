@@ -17,7 +17,7 @@ namespace XeroApi.Model
         {
             elementName = elementName.Trim();
 
-            if (elementName.EndsWith("s"))
+            if (elementName.EndsWith("s") || elementName == "Setup")
             {
                 return elementName;
             }
