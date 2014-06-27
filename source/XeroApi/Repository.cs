@@ -160,7 +160,7 @@ namespace XeroApi
             string responseXml = _proxy.CreateElements(typeof(TModel).Name, requestXml);
 
             Response response = ModelSerializer.DeserializeTo<Response>(responseXml);
-
+            
             return response.GetTypedProperty<TModel>();
         }
 

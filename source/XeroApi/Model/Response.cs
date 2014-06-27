@@ -32,6 +32,7 @@ namespace XeroApi.Model
         public Users Users { get; set; }
         public Receipts Receipts { get; set; }
         public ExpenseClaims ExpenseClaims { get; set; }
+        public Setup Setup { get; set; }
 
         #region Type Helper Methods
 
@@ -55,7 +56,12 @@ namespace XeroApi.Model
 
             foreach (PropertyInfo property in properties)
             {
-                if (typeof(IModelList<TModel>).IsAssignableFrom(property.PropertyType))
+                if (property.Name == "Setup")
+                {
+                    var model = (Setup)property.GetValue(this, new object[] { });
+                    return (IModelList<TModel>) new Setups {model};
+                }
+                else if (typeof(IModelList<TModel>).IsAssignableFrom(property.PropertyType))
                 {
                     return (IModelList<TModel>)property.GetValue(this, new object[] { });
                 }

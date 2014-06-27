@@ -6,4 +6,8 @@
         public ConversionDate ConversionDate { get; set; }
         public ConversionBalance[] ConversionBalances { get; set; }
     }
+
+    public class Setups : ModelList<Setup>
+    {
+    }
 }
