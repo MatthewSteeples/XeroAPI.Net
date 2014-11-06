@@ -8,7 +8,7 @@ namespace XeroApi.Model
         
     }
 
-    public abstract class ModelBase
+    public abstract class ModelBase : IModelBase
     {
         [XmlAttribute("status")]
         public ValidationStatus ValidationStatus 
@@ -28,6 +28,11 @@ namespace XeroApi.Model
             get; 
             set;
         }
+    }
+
+    public interface IModelBase
+    {
+
     }
 
     public enum ValidationStatus
