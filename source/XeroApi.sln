@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XeroApi", "XeroApi\XeroApi.csproj", "{20A56AFE-3B15-4FA6-A06D-96F20D5A770D}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "XeroApi.VBConsole", "XeroApi.VBConsole\XeroApi.VBConsole.vbproj", "{DF776A50-8B97-465D-A9D5-5924EF731433}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "XeroApi.VBTests", "XeroApi.VBTests\XeroApi.VBTests.vbproj", "{F183E784-CDD6-4A41-A567-EA3D46C6C26D}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "XeroApi.MvcWebApp.Azure", "XeroApi.MvcWebApp.Azure\XeroApi.MvcWebApp.Azure.ccproj", "{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,16 @@ Global
 		{F183E784-CDD6-4A41-A567-EA3D46C6C26D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F183E784-CDD6-4A41-A567-EA3D46C6C26D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F183E784-CDD6-4A41-A567-EA3D46C6C26D}.Release|x86.ActiveCfg = Release|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{529BEC9D-8FBE-44CC-9DFD-F0CC3CE6C734}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

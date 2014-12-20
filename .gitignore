@@ -1,10 +1,41 @@
-# Standard VS.NET and ReSharper Foo
-source/*/obj
-source/*/bin
-*.csproj.user
-*ReSharper.user
-_ReSharper*
-*resharper*
+googlenews
+output
+RSSLog.txt
+files
+Deployment
+*.vs10x
+TestResults
+ClientBin
+Generated_Code
+Bin
 *.suo
+*.user
+bin
+obj
 *.cache
-* Thumbs.db
+ServiceDefinition.build.csdef
+*.docstates
+lib
+csx
+packages/
+LedgerscopeWeb/TestConsole/Playground.cs
+[Dd]ebug/
+[Tt]humbs.db
+*.sln.ide
+GeneratedAssemblyInfo.cs
+*.DotSettings.build/_NCrunch_LedgerscopeWeb/
+/LedgerscopeWeb/_NCrunch_LedgerscopeWeb/StoredText
+*.DotSettings
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp*
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version. Backup files are not needed,
+# because we have git ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm

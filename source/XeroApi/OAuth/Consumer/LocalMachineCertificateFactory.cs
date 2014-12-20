@@ -64,7 +64,7 @@ namespace DevDefined.OAuth.Consumer
         /// <returns></returns>
         private X509Certificate2Collection GetCertificateCollection()
         {
-            X509Store certStore = new X509Store("My", StoreLocation.LocalMachine);
+            X509Store certStore = new X509Store("My", StoreLocation.CurrentUser);
             certStore.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
             X509Certificate2Collection certificateCollection = certStore.Certificates.Find(_findType, _certificateSubject, false);
             certStore.Close();

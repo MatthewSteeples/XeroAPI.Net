@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="XeroApi.MvcWebApp.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WebRole name="XeroApi.MvcWebApp" vmsize="ExtraSmall">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Certificates>
+      <Certificate name="XeroClient" storeLocation="CurrentUser" storeName="My" />
+      <Certificate name="XeroSsl" storeLocation="CurrentUser" storeName="My" />
+      <!--<Certificate name="cpsca1" storeLocation="CurrentUser" storeName="My" />
+      <Certificate name="entrust" storeLocation="CurrentUser" storeName="My" />-->
+      <Certificate name="cpsca1" storeLocation="CurrentUser" storeName="CA" />
+      <Certificate name="entrust" storeLocation="CurrentUser" storeName="Trust" />
+    </Certificates>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+  </WebRole>
+</ServiceDefinition>

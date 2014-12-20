@@ -23,7 +23,7 @@ namespace Xero.ScreencastWeb.Services
             X509FindType x509FindType = (X509FindType)Enum.Parse(typeof(X509FindType), oauthCertificateFindType);
 
             // Search the LocalMachine certificate store for matching X509 certificates.
-            X509Store certStore = new X509Store("My", StoreLocation.LocalMachine);
+            X509Store certStore = new X509Store("My", StoreLocation.CurrentUser);
             certStore.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
             X509Certificate2Collection certificateCollection = certStore.Certificates.Find(x509FindType, oauthCertificateFindValue, false);
             certStore.Close();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="XeroApi.MvcWebApp.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="XeroApi.MvcWebApp">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="matthew" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEH6b6PJln7e4Sbda3s8uClswDQYJKoZIhvcNAQEBBQAEggEAl7XGd8Tgep3c5V0NU5RJSQPjMtvoMZOpKZooVs41H/QQlvXXocrjZdWMy22etH4Qy8VuFqvlskMkDQ58lfmaRHFqFvlYgPjhQ+y2JvubaHgA9LokvwaqayONv4sbTJeAvqTQQM43Axie3+rjsLXuNoKqpF7pdkrQWExa91vK11L5j5FLz4tL+bMFw3Fr7bMQtnDHtb8Qcfxpy5T6PHQzDNXGtLwLSzDtNELznScUnbIWZ0yDOY3XXtO05Xop2U/JETYuA0Gsxsb1luxf1bTghlQgL57v6Jnw22p6Q8tnHzkiRQWGRt0oltjRTJYEnn5JW08S/Fr5rpprbTFIInFDujAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECLQhxT3FIUPdgBCL2+nZ4gW7OlJpUrteFKs7" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-12-19T23:59:59.0000000+00:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="XeroClient" thumbprint="C692AC3005C0F091B6FAD87EB124CEA85DD30F9B" thumbprintAlgorithm="sha1" />
+      <Certificate name="XeroSsl" thumbprint="65899536D4ED7F9AC82BB374343E7223BFB63EE9" thumbprintAlgorithm="sha1" />
+      <Certificate name="cpsca1" thumbprint="B5F2FDA8347E3DFE4AE93EA13A93E1A3D036B80F" thumbprintAlgorithm="sha1" />
+      <Certificate name="entrust" thumbprint="245CA5451FD15BB9D5379B44ACEF6DA5D48C7291" thumbprintAlgorithm="sha1" />
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="C0AB451421D569E1407EDA72A73FAFCC8BDA2BAD" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
